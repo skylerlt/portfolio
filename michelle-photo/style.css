@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poiret One', cursive;
+}
+
 body {
     padding: 20px;
 }
@@ -43,7 +47,7 @@ nav > ul > li {
 }
 
 .item {
-    height: 800px;
+    height: 500px;
     width: auto;
 }
 
@@ -51,25 +55,22 @@ nav > ul > li {
     position: absolute;
     height: 100%;
     width: 100%;
-    bottom: -300px;
-    top: 0;
+    margin-top: -200px;
+    margin-bottom: 200px;
 }
 
 .about {
     text-align: center;
 }
 
-.about2 > p {
-    width: 300px;
-    margin-top: 50px;
+.aboutP {
+    font-size: 25px;
+    padding: 10px;
 }
 
 .aboutImg {
     height: 350px;
     width: auto;
-    position: absolute;
-    right: 400px;
-    margin-top: -150px;
 }
 
 .galleryRow {
@@ -110,4 +111,13 @@ nav > ul > li {
 .modalImg {
     height: 700px;
     width: auto;
+}
+
+.galleryDiv {
+    text-align: center;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
