@@ -1,0 +1,36 @@
+<h1>Here you'll find Michelle's photos!</h1>
+
+
+<div class="row galleryRow">
+    <a data-toggle="modal" data-target="#photoModal" ng-click="select(photo)" ng-repeat="photo in allPhotos track by $index" href="">
+        <div ng-style="{'background-image':'url({{photo.image}})'}" class="gallery">
+            <!--            <h3 class="photoTitle">My name is:</h3>-->
+        </div>
+    </a>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">{{selected.title}}</h4>
+            </div>
+-->
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <!--                        <p>{{selected.body}}</p>-->
+                <img class="modalImg" ng-src="{{selected.image}}" alt="">
+            </div>
+            <!--
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" ng-click="saveEx(selected)" data-dismiss="modal">Add to Workout</button>
+            </div>
+-->
+        </div>
+    </div>
+</div>
