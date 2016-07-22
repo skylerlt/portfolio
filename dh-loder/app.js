@@ -4,28 +4,28 @@ app.config(function ($routeProvider) {
 
     $routeProvider
         .when("/", {
-            templateUrl: "/pages/home.html"
+            templateUrl: "pages/home.html"
         })
         .when("/home", {
-            templateUrl: "/pages/home.html"
+            templateUrl: "pages/home.html"
         })
         .when("/company", {
-            templateUrl: "/pages/company.html"
+            templateUrl: "pages/company.html"
         })
         .when("/contact", {
-            templateUrl: "/pages/contact.html"
+            templateUrl: "pages/contact.html"
         })
         .when("/residential", {
-            templateUrl: "/pages/residential.html"
+            templateUrl: "pages/residential.html"
         })
         .when("/employ", {
-            templateUrl: "/pages/employment.html"
+            templateUrl: "pages/employment.html"
         })
         .when("/clients", {
-            templateUrl: "/pages/clients.html"
+            templateUrl: "pages/clients.html"
         })
         .when("/commercial", {
-            templateUrl: "/pages/commercial.html"
+            templateUrl: "pages/commercial.html"
         })
 
 });
