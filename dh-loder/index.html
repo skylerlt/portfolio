@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>D.H. Loder Construction</title>
+    <link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/element.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container-fluid" ng-controller="MainController">
+
+    <img class="headerImg" src="http://dhloder.com/images/default/hdr.jpg" alt="">
+    <br>
+    <nav>
+        <img ng-if="thumb==='house'" class="navImg" src="http://dhloder.com/images/ad2.jpg" alt="">
+        <img ng-if="thumb==='bricks'" class="navImg" src="http://dhloder.com/images/ad3.jpg" alt="">
+        <img ng-if="thumb==='counter'" class="navImg" src="http://dhloder.com/images/ad1.jpg" alt="">
+        <img ng-if="thumb==='crane'" class="navImg" src="http://dhloder.com/images/ad4.jpg" alt="">
+        <ul>
+            <li>
+                <a class="navA" href="#/home" ng-click="thumb='house'">
+                    <button class="btn navBtn">Home</button>
+                </a>
+            </li>
+            <li>
+                <a class="navA" href="#/company" ng-click="thumb='bricks'">
+                    <button class="btn navBtn">Company</button>
+                </a>
+            </li>
+            <li>
+                <a class="navA" href="#/residential" ng-click="thumb='counter'">
+                    <button class="btn navBtn">Residential</button>
+                </a>
+            </li>
+            <li>
+                <a class="navA" href="#/commercial" ng-click="thumb='bricks'">
+                    <button class="btn navBtn">Commercial</button>
+                </a>
+            </li>
+            <li>
+                <a class="navA" href="#/employ" ng-click="thumb='crane'">
+                    <button class="btn navBtn">Employment</button>
+                </a>
+            </li>
+            <li>
+                <a class="navA" href="#/contact" ng-click="thumb='counter'">
+                    <button class="btn navBtn">Contact</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="body">
+
+        <img src="http://dhloder.com/images/welcome.jpg" alt="">
+
+        <div ng-view></div>
+
+
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+* {
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+body {
+    background-image: url(https://wallpaperscraft.com/image/wooden_boards_horizontal_light_background_50593_1920x1080.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+nav {
+    position: fixed;
+    height: 100%;
+    width: 11%;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    background-color: #0A4022;
+}
+
+nav > ul {
+    list-style: none;
+    font-size: 20px;
+    text-align: left;
+}
+
+nav > ul > li {
+    margin-left: -40px;
+    transition: linear 1.5s;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #148447;
+}
+
+
+/*
+td {
+    padding-left: 10px;
+}
+*/
+
+td > ul {
+    text-align: left;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    width: 70px;
+    text-align: right;
+}
+
+textarea {
+    margin-left: 74px;
+}
